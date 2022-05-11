@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>E-Fatura Form Sayfası</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body >
+    <h3> E-Fatura Zorunluluğu Sorgulama Formu</h3>
+    <form action="#" id="faturaForm">
+        <label for="sirketTipi" class="soru">Şirket sektörünü seçiniz</label>
+        <select name="" id="sirketTipi" size="6">
+            
+            <option value="eTicaret">E-ticaret Firmaları</option>
+            <option value="gayrimenkul">Gayrimenkul veya Motorlu Taşıt Firmaları</option>
+            <option value="otel">Tüm Oteller (Ciro Şartı Aranmamaktadır)</option>
+            <option value="doviz">Döviz Büroları</option>
+           
+            <optgroup label="Ticari Firmalar">
+                <option value="dhts">Tütün, Alkol, Gazli İçecek Üretici ve Dağıtıcıları</option>
+                <option value="dhts">HKS Sistemine Kayıtlı Sebze, Meyve Hal Firmaları</option>
+                <option value="dhts">Gübre Takip Sistemine Kayıtlı Tarım Firmaları</option>
+                <option value="dhts">Şeker İmalatçıları</option>
+                <option value="enerjiMaden">Enerji Sektörü Üretici, Dağıtıcı ve Bayileri</option>
+                <option value="enerjiMaden">Maden İmalat ve İthalatçıları</option>
+                <option value="bavul">Bavul Ticareti Yapan Firmalar</option>
+            </optgroup>
+
+            <optgroup label="Bilet Satışı Yapan Firmalar">
+                <option value="gosteriTasima">Gösteri Firmaları</option>
+                <option value="gosteriTasima">Şehirlerarası Yolcu Taşıma Firmaları</option>
+            </optgroup>
+
+            <optgroup label="Serbest Meslek Mensupları">
+                <option value="serbest">Serbest Meslek Mensupları (Noterler Hariç)</option>
+            </optgroup>
+
+        </select>
+
+        <label for="yillikciro" class="soru">Yıllık cironuzu seçiniz</label>
+        <span class="cirosec">
+            <input type="radio" name="ciro" id="secenek1" value="4milyon">
+            <label for="secenek1">2021 CİRO 4 Milyon TL ve Üzeri</label>
+            <input type="radio" name="ciro" id="secenek2" value="3milyon">
+            <label for="secenek2">2022 CİRO 3 Milyon TL ve Üzeri</label>
+            <input type="radio" name="ciro" id="secenek3" value="1milyon">
+            <label for="secenek3">2020 veya 2021 1 Milyon TL CİRO ve Üzeri </label>
+            <input type="radio" name="ciro" id="secenek4" value="10milyon">
+            <label for="secenek4">2021 Dönemi 10 Milyon TL CİRO ve Üzeri</label>
+        </span>
+ 
+        <!-- <label for="ciroYili">Ciro yılını seçin</label>
+        <select name="yil" id="ciroYili" style="width: 200px;">
+                <option value="default">Yıl seçiniz</option>
+
+        </select> -->
+        
+        <input class="button" type="button" value="Fatura Sorgula" onclick="eFaturaZorunluluguSorgula();">
+    </form>
+    <h5 id="sonuc"></h5>
+</body>
+</html>

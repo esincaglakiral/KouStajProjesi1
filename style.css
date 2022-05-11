@@ -1,0 +1,68 @@
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: thin solid rgba(24, 145, 78, 0.897);
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(227, 252, 227);
+}
+
+.soru {
+    font-weight: 800;
+    color: rgba(57, 95, 82, 0.897);
+}
+
+#sirketTipi {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: rgb(87, 146, 97);
+}
+
+span {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: repeat(4, 20px);
+}
+
+input[type=button] {
+    width: 200px;
+    height: 40px;
+    margin-left: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(111, 240, 128);
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type=button]:hover {
+    background-color: rgba(27, 124, 46, 0.73);
+    color: whitesmoke;
+    transition: 0.5s;
+    
+}
+
+h3,
+h5 {
+    text-align: center;
+}
+
+form>label {
+
+    border-right: thin solid rgba(24, 145, 78, 0.897);
+    border-bottom: thin solid rgba(24, 145, 78, 0.897);
+    
+}
+.cirosec{
+    color:  rgba(57, 95, 82, 0.897);
+}
+
+form>span {
+    border-top: thin solid rgba(24, 145, 78, 0.897);
+    border-bottom: thin solid rgba(24, 145, 78, 0.897);
+    padding: 1rem;
+}
